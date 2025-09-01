@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCodeAds</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<body>
+    
+<!-- NAVIGACIJA -->
+<nav class="navbar">
+
+<div class="wrapper">
+  <div class="logo">
+    <a href="index.html">
+      <img src="media/logo_white.svg" alt="Logo">
+    </a>
+  </div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="#service-section">Usluge</a>
+    <a href="#projects-section">Testimonials</a>
+    <a href="#projects-section">Projekti</a>
+    <a href="#process-section">Proces</a>
+    <button class="primary-btn" onclick="window.location.href='contact.html';">Kontaktirajte nas</button>
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+</nav>
+
+
+<!-- HERO SEKCIJA -->
+<section class="hero_section">
+
+<div class="hero_content">
+    <div class="hero_badge">
+        <div class="badge_indicator">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+        <span>Dostupni smo za rad</span>
+    </div>
+    <h1>Funkcionalni sajtovi za mala i srednja preduzeća</h1>
+    <p>Dizajniramo brze, moderne i SEO optimizovane web sajtove koji posjetioce pretvaraju u klijente.</p>
+
+    <div class="buttons">
+        <button class="primary_btn" onclick="window.location.href='contact.html';">
+            Kontaktirajte nas
+        </button>
+
+        <button class="secondary_btn" onclick="document.getElementById('projects-section').scrollIntoView({ behavior: 'smooth' });">
+            Pogeldajte projekte<img src="/media/arrow_down.svg">
+        </button>
+    </div>
+</div>
+
+</section>
+
+
+
+<!-- USLUGE SEKCIJA -->
+<section id="services_section" class="services_section">
+
+<div class="container">
+
+<div class="head_content">
+    <h2>Usluge koje pretvaraju ideje u rezultate</h2>
+    <p>Kombinujemo dizajn, razvoj i strategiju kako biste uvijek bili korak ispred konkurencije.</p>
+</div>
+
+<div class="services_grid">
+
+<div class="service_card div1">
+    <span>/ 01</span>
+    <img src="media/01_icon.svg" alt="Opis slike"/>
+  
+    <div class="card_content">
+        <h3>Web development</h3>
+        <p>Izrađujemo brze, sigurnе i tehnički besprijekorne web sajtove, koji će vam pomoći da napredujete.</p>
+    </div>
+</div>
+
+<div class="service_card div2">
+    <span>/ 02</span>
+    <img src="media/02_icon.svg" alt="Opis slike"/>
+  
+    <div class="card_content">
+        <h3 >Web dizajn</h3>
+        <p>Kreiramo moderne i vizuelno upečatljive web sajtove koji vode korisnika prave buduće klijente.</p>
+    </div>
+</div>
+
+<div class="service_card div3">
+    <span>/ 03</span>
+    <img src="media/03_icon.svg" alt="Opis slike"/>
+  
+    <div class="card_content">
+        <h3>Graficki dizajn</h3>
+        <p>Od logo-a do flajera ili vizit kartica, kreiramo dizajn koji ostaje upečatljiv i poznat.</p>
+    </div>
+</div>
+
+<div class="service_card div4">
+    <span>/ 04</span>
+    <img src="media/04_icon.svg" alt="Opis slike"/>
+  
+    <div class="card_content">
+        <h3>Dizajn drustvenih mreza</h3>
+        <p>Pravimo vizuale koji privlače klijente, pojačavaju vaš brend i povećavaju angažman publike.</p>
+    </div>
+</div>
+
+<div class="service_card div5">
+    <span>/ 05</span>
+    <img src="media/05_icon.svg" alt="Opis slike"/>
+  
+    <div class="card_content">
+        <h3>SEO optimizacija</h3>
+        <p>Optimizujemo vaš sadržaj i tehničku strukturu sajta kako biste se rangirali visoko na pretraživačima.</p>
+    </div>
+</div>
+
+<div class="service_card div6">
+    <span>/ 06</span>
+    <img src="media/06_icon.svg" alt="Opis slike"/>
+  
+    <div class="card_content">
+        <h3>Konsalting</h3>
+        <p>Analiziramo ciljeve i pomažemo u donošenju pravih odluka o digitalnom prisustvu i razvoju.
+        </p>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PROJEKTI SEKCIJA -->
+<section id="projects_section" class="projects_section">
+
+<div class="content_wrapper"> 
+
+<div class="head_content">
+    <div class="content_container">
+        <h2>Projekti koji govore o nama</h2>
+        <p>Od ideja klijenata do modernih realizacija,  pravimo digitalna rješenja za sve vrste klijenata.</p>
+    </div>
+
+    <button class="tertiary_btn_dark" onclick="window.location.href='contact.html';">Postanite jedan od njih</button>
+</div>
+
+<div class="cards_container">
+
+<div class="project_card">
+    
+    <div class="project_img">
+        <img src="media/case_study1.png" alt="Opis slike" class="image" />
+    </div>
+  
+    <div class="content_container">
+        <div class="badges">
+            <span>Web development</span>
+            <span>Web dizajn</span>
+        </div>   
+
+        <h3>Fiena Care Pflegedienst</h3>
+        <p>Finea Care je skup kvalifikovanih zdravstvenih radnika, koji se bave čuvanju starijih članova porodice i njihovim zdravljem.</p>
+        <div class="tertiary_btn">Pročitajte više <img src="media/arrow_right_dark.svg"></div>
+    </div>
+
+</div>
+
+
+<div class="project_card">
+    
+    <div class="project_img">
+        <img src="media/case_study1.png" alt="Opis slike" class="image" />
+    </div>
+  
+    <div class="content_container">
+        <div class="badges">
+            <span>Web development</span>
+            <span>Web dizajn</span>
+        </div>   
+
+        <h3>Fiena Care Pflegedienst</h3>
+        <p>Finea Care je skup kvalifikovanih zdravstvenih radnika, koji se bave čuvanju starijih članova porodice i njihovim zdravljem.</p>
+        <div class="tertiary_btn">Pročitajte više <img src="media/arrow_right_dark.svg"></div>
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- TESTIMONIAL SEKCIJA -->
+<!-- <section id="testimonials-section" class="testimonials-section">
+
+<div class="head-content">
+    <h2>Šta kažu o nama</h2>
+    <p>Težimo ka tome da naši klijenti dožive profesionalizan i uspješno završen projekat tokom saradnje sa nama.</p>
+</div>
+
+<div class="wrapper">
+
+<div class="testimonial">
+
+    <div class="dots-container">
+        <div class="dot" style="background-color: #FB635C;"></div>
+        <div class="dot" style="background-color: #FCBD49;"></div>
+        <div class="dot" style="background-color: #39C752;"></div>
+    </div>
+
+    <div class="content-wrapper">
+    <div class="content-container active">
+        <h4>Raditi s iCodeAds timom bilo je pravo osvježenje. Brzi su, kreativni i uvijek tačno znaju šta hoću, čak i kad ja nisam bio siguran. Naš novi sajt izgleda odlično i radi savršeno.</h4>
+
+        <div class="bottom-content">
+            <div class="persson-container">
+                <img src="images/testimonials-section/persson1.png">
+                <div class="about-persson">
+                    <p class="name">Marko Stankovic</p>
+                    <p class="company">Sani Pflegedienst</p>
+                </div>
+            </div>
+
+            <div class="arrows-container">
+                <div class="previous-arrow">
+                    <img src="images/testimonials-section/previous-arrow.svg">
+                </div>
+                <div class="next-arrow">
+                    <img src="images/testimonials-section/next-arrow.svg">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+        <div class="content-container">
+        <h4>Raditi sa ovim momcima bilo je pravo zadovoljstvo. Efikasni su, puni ideja i tačno razumiju moje potrebe, čak i kad nisam znao kako da ih izrazim. Naš redizajnirani sajt izgleda bolje nego ikad!</h4>
+
+        <div class="bottom-content">
+            <div class="persson-container">
+                <img src="images/testimonials-section/persson2.png">
+                <div class="about-persson">
+                    <p class="name">Pero Jankovic</p>
+                    <p class="company">France</p>
+                </div>
+            </div>
+
+            <div class="arrows-container">
+                <div class="previous-arrow">
+                    <img src="images/testimonials-section/previous-arrow.svg">
+                </div>
+                <div class="next-arrow">
+                    <img src="images/testimonials-section/next-arrow.svg">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+        <div class="content-container">
+        <h4>Saradnja sa iCodeAds ekipom prošla je izvan svih očekivanja. Brzi su, pažljivi i tačno znaju šta želim, čak i kada sam bio neodlučan. Naš novi web izgleda moderno i radi bez greške.</h4>
+
+        <div class="bottom-content">
+            <div class="persson-container">
+                <img src="images/testimonials-section/persson3.png">
+                <div class="about-persson">
+                    <p class="name">Janko Stankovic</p>
+                    <p class="company">Germany</p>
+                </div>
+            </div>
+
+            <div class="arrows-container">
+                <div class="previous-arrow">
+                    <img src="images/testimonials-section/previous-arrow.svg">
+                </div>
+                <div class="next-arrow">
+                    <img src="images/testimonials-section/next-arrow.svg">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+</div>
+
+</section> -->
+
+
+
+<!-- PROCES SEKCIJA -->
+<!-- <section id="process-section" class="process-section">
+
+<div class="head-content">
+    <div class="left-side">
+        <h2>Naš proces - od ideje do realizacije</h2>
+    </div>
+
+    <div class="right-side">
+        <p>Svaki projekat tretiramo kao partnerstvo. 
+        Naš proces je jasan, transparentan i fokusiran na rezultat.</p>
+        <button class="primary-btn" href="#">Kontaktirajte nas <img class="icon" src="/images/arrow-right-white.svg"></button>
+    </div>
+</div>
+
+<div class="cards-container">
+
+<div class="process-card">
+    <img src="images/process-section-icons/handshake.svg" alt="Opis slike" class="icon" />
+  
+    <div class="card-content">
+        <h3>Upoznavanje sa projektom</h3>
+        <p>Kreiramo sadržaj, vodimo kampanje i gradimo zajednicu oko vašeg brenda.</p>
+    </div>
+</div>
+
+<div class="process-card">
+    <img src="images/process-section-icons/notebook-pen.svg" alt="Opis slike" class="icon" />
+  
+    <div class="card-content">
+        <h3>Planiranje projekta</h3>
+        <p>Kreiramo sadržaj, vodimo kampanje i gradimo zajednicu oko vašeg brenda.</p>
+    </div>
+</div>
+
+<div class="process-card">
+    <img src="images/process-section-icons/square-code.svg" alt="Opis slike" class="icon" />
+  
+    <div class="card-content">
+        <h3>Dizajn i razvoj</h3>
+        <p>Kreiramo sadržaj, vodimo kampanje i gradimo zajednicu oko vašeg brenda.</p>
+    </div>
+</div>
+
+<div class="process-card">
+    <img src="images/process-section-icons/text-search.svg" alt="Opis slike" class="icon" />
+  
+    <div class="card-content">
+        <h3>Testiranje i optimizacija</h3>
+        <p>Kreiramo sadržaj, vodimo kampanje i gradimo zajednicu oko vašeg brenda.</p>
+    </div>
+</div>
+
+<div class="process-card">
+    <img src="images/process-section-icons/rocket.svg" alt="Opis slike" class="icon" />
+  
+    <div class="card-content">
+        <h3>Lansiranje i podrška</h3>
+        <p>Kreiramo sadržaj, vodimo kampanje i gradimo zajednicu oko vašeg brenda.</p>
+    </div>
+</div>
+
+</div>
+
+</section> -->
+
+
+
+<!-- CTA SEKCIJA -->
+<!-- <section class="cta-section">
+
+<div class="wrapper">
+    <h2>Imate projekat na umu, tu smo da razgovaramo</h2>
+
+    <div class="cta-container">
+
+    <div class="buttons">
+        <button class="primary-btn" href="#">Kontaktirajte nas <img class="icon" src="/images/arrow-right.svg"></button>
+        <div class="indicator">
+            <div class="green-dot"></div><p>otvoreni smo za saradnju</p>
+        </div>
+    </div>
+    <p>ili pišite na email <a href="#">info@icodeads.com</a></p>
+
+    </div>
+</div>
+
+</section> -->
+
+
+<!-- FOOTER -->
+<!-- <footer>
+
+<div class="wrapper">
+    <div class="right-side">
+        <img href="" src="/images/logo-white.svg">
+        <div class="contact-links">
+            <a href="#">info@icodeads.com</a>
+            <a href="#">+382 111 222 333</a>
+        </div>
+        <div class="social-media">
+            <div><img src="images/instagram.svg"></div>
+            <div><img src="images/linkedin.svg"></div>
+            <div><img src="images/facebook.svg"></div>
+        </div>
+    </div>
+
+    <div class="left-side">
+        <ul class="menu-list">
+            <li><a class="heading" href="#">Meni</a></li>
+            <li><a href="#">Usluge</a></li>
+            <li><a href="#">Proces</a></li>
+            <li><a href="#">Projekti</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+        <ul class="project-list">
+            <li><a class="heading" href="#">Pravni linkovi</a></li>
+            <li><a href="#">Fiena Care Case Study</a></li>
+            <li><a href="#">Sani Pflegedienst Case Study</a></li>
+        </ul>
+    </div>
+
+</div>
+
+    <div class="bottom-links">
+        <a href="#">Sva prava zadržava iCodeAds 2025</a>
+
+        <div class="privacy-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of use</a>
+        </div>
+    </div>
+
+</footer> -->
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="js/style.js"></script> <!-- Na kraju ide JS kod -->
+
+</body>
+</html>
