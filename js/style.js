@@ -29,7 +29,9 @@ navItems.forEach(item => {
 });
 
 
-// Process sekcija scroll za kartice
+
+
+// PROCES SEKCIJA
 $(document).ready(function(){
     $('.card').hover(
       function() {
@@ -50,7 +52,9 @@ $(document).ready(function(){
   });
 
 
-// TESTIMONIAL
+
+
+// TESTIMONIAL SEKCIJA
 document.addEventListener("DOMContentLoaded", function () {
   const containers = document.querySelectorAll(".content-wrapper .content-container");
   let currentIndex = 0;
@@ -89,6 +93,58 @@ document.addEventListener("DOMContentLoaded", function () {
   // Osiguraj da se samo jedan prikazuje na load
   showContainer(currentIndex);
 });
+
+
+
+
+// PROCES SECKIJA
+const steps = document.querySelectorAll('.timeline-step');
+    const timeline = document.getElementById('timeline');
+    const progressLine = timeline.querySelector("::after");
+
+    // Intersection observer za animaciju prikaza koraka
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    steps.forEach(step => observer.observe(step));
+
+    // Scroll event za popunjavanje linije
+    window.addEventListener('scroll', () => {
+      const timelineRect = timeline.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      const scrollTop = window.scrollY;
+
+      const start = timeline.offsetTop;
+      const end = start + timeline.offsetHeight;
+      const scrollPosition = scrollTop + windowHeight / 2;
+
+      let progress = ((scrollPosition - start) / (end - start)) * 100;
+      progress = Math.min(Math.max(progress, 0), 100);
+
+      timeline.style.setProperty('--progress', progress + '%');
+
+      // Popuni liniju
+      timeline.style.setProperty('--line-height', progress + '%');
+
+      // Aktiviraj kružiće koji su u vidnom delu
+      steps.forEach((step, index) => {
+        const rect = step.getBoundingClientRect();
+        if (rect.top < windowHeight * 0.7) {
+          step.classList.add('active');
+        }
+      });
+    });
+
+
+
+
+
+
 
 
 // KONTAKT

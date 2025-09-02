@@ -17,6 +17,8 @@ body {
     background-color: #ffffff;
 }
 
+
+
 /* NAVIGACIJA */
 .navbar {
   display: flex;
@@ -581,6 +583,7 @@ h1 {
     line-height: 120%;
     letter-spacing: 0.5px;
     margin-bottom: 16px;
+    color: #272B21;
 }
 
 .projects_section .content_wrapper .head_content .tertiary_btn_dark {
@@ -754,4 +757,454 @@ h1 {
     .projects_section .content_wrapper .cards_container .project_card .content_container .tertiary_btn {
         width: 210px;
     }
+}
+
+
+
+/* TESTIMONIALS SEKCIJA */
+.testimonials-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+    padding: 80px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.testimonials-section .head-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-section .head-content h2 {
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+    text-align: center;
+    width: 500px;
+    margin-bottom: 16px;
+    color: #272B21;
+}
+
+.testimonials-section .head-content p {
+    text-align: center;
+    width: 500px;
+    color: #272B21;
+}
+
+.testimonials-section .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    max-width: 850px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #F9F9F9;
+    transition: transform 0.3s ease;
+}
+
+ .testimonial .dots-container {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0.25rem;
+    gap: 0.25rem;
+    padding-left: 4px;
+}
+
+.testimonial .dots-container .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #DFDFDF;
+}
+
+.testimonial .content-container {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 32px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 10%);
+}
+
+.testimonial .content-container.active {
+    display: flex;
+}
+
+.testimonial .content-container h4 {
+    font-size: 24px;
+    line-height: 160%;
+    font-weight: 600;
+}
+
+.testimonial .content-container .bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.testimonial .content-container .bottom-content .persson-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.testimonial .content-container .bottom-content .persson-container .about-persson {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.testimonial .content-container .bottom-content .persson-container .about-persson .name {
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 600;
+    color: #7c7c7c;
+}
+
+.testimonial .content-container .bottom-content .persson-container .about-persson .company {
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 300;
+    color: #7c7c7c;
+}
+
+.testimonial .content-container .bottom-content .arrows-container {
+    display: flex;
+    gap: 8px;
+}
+
+.testimonial .content-container .bottom-content .arrows-container .previous-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.testimonial .content-container .bottom-content .arrows-container .next-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.testimonial .content-container .bottom-content .arrows-container .previous-arrow:hover {
+    background-color: #f9f9f9;
+}
+
+.testimonial .content-container .bottom-content .arrows-container .next-arrow:hover {
+    background-color: #f9f9f9;;
+}
+
+@media (max-width: 768px) {
+    .testimonials-section {
+        padding: 80px 32px 80px 32px;
+    }
+
+    .testimonials-section .head-content h2 {
+        width: 100%;
+        font-size: 40px;
+        line-height: 110%;
+        width: 430px;
+        letter-spacing: 0.5px;
+    }
+
+    .testimonials-section .head-content p {
+        color: #272B21;
+        font-size: 16px;
+    }
+
+    .testimonials-section .head-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-section {
+        padding: 80px 20px 60px 20px;
+    }
+
+    .testimonials-section .head-content h2 {
+        font-size: 32px;
+        line-height: 110%;
+        width: 100%;
+        letter-spacing: 0.5px;
+    }
+
+    .testimonials-section .head-content p {
+        width: 100%;
+    }
+
+    .testimonial .content-container h4 {
+        font-size: 20px;
+        line-height: 160%;
+        font-weight: 600;
+}
+}
+
+
+
+/* PROCES SEKCIJA */
+ .process_section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section-wrapper {
+      display: flex;
+      width: 100%;
+      max-width: 1280px;
+      padding: 80px;
+      gap: 64px;
+    }
+
+    /* Leva strana */
+    .section-left {
+      flex: 1;
+      width: 400px;
+    }
+
+    .section-left h2 {
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: 0.5px;
+        margin-bottom: 16px;
+        text-align: left;
+        width: 500px;
+        margin-bottom: 16px;
+        color: #272B21;
+    }
+
+    .section-left p {
+      color: #272B21;
+      width: 400px;
+    }
+
+    /* Desna strana - timeline */
+    .timeline {
+      position: relative;
+      flex: 1;
+      padding-left: 50px;
+    }
+
+    /* Siva linija */
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 15px;
+      width: 3px;
+      height: 100%;
+      background: #f1f1f1;
+    }
+
+    /* Narandžasta "progress" linija */
+    .timeline::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 15px;
+      width: 3px;
+      height: 0;
+      background: #B1E54A;
+      transition: height 0.3s ease-out;
+    }
+
+    /* Pojedinačni koraci */
+    .timeline-step {
+      position: relative;
+      margin-bottom: 56px;
+      padding-left: 24px;
+      opacity: 0;
+      transition: all 1s ease;
+    }
+    .timeline-step.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Kružići */
+    .timeline-step::before {
+      content: "";
+      position: absolute;
+      left: -46px;
+      top: 0;
+      width: 24px;
+      height: 24px;
+      background: #fff;
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    .timeline-step.active::before {
+      background: #B1E54A;
+    }
+
+    .timeline-step h3 {
+      margin-bottom: 12px;
+      font-size: 24px;
+    }
+    .timeline-step p {
+      font-size: 16px;
+      color: #7c7c7c;
+      width: 400px;
+    }
+
+.timeline::after {
+      height: var(--line-height, 0);
+    }
+
+@media (max-width: 1024px) {
+
+    .section-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-wrapper {
+        padding: 80px 32px 80px 32px;
+    }
+
+    .section-wrapper .section-left h2 {
+        width: 100%;
+        font-size: 40px;
+        line-height: 110%;
+        width: 430px;
+        letter-spacing: 0.5px;
+    }
+
+    .section-wrapper .section-left p {
+        font-size: 16px;
+    }
+
+    .timeline .timeline-step {
+        padding-left: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-wrapper {
+        padding: 80px 20px 60px 20px;
+    }
+
+    .section-wrapper .section-left h2 {
+        font-size: 32px;
+        line-height: 110%;
+        width: 100%;
+        letter-spacing: 0.5px;
+    }
+
+    .timeline .timeline-step {
+        padding-left: 0px;
+    }
+
+    .timeline .timeline-step p {
+        font-size: 14px;
+        line-height: 150%;
+        width: 350px;
+    }
+}
+
+
+
+
+/* CTA SEKCIJA */
+.cta_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    width: 100%;
+    background-color: #eaF7d8;
+}
+
+.cta_section .section-wrapper {
+    max-width: 1280px;
+}
+
+.cta_section .section_wrapper h2 {
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #272B21;
+}
+
+.cta_section .section_wrapper .content {
+    text-align: center;
+}
+
+.cta_section .section_wrapper .content a {
+    color: #272B21;
+    font-weight: 700;
+}
+
+.cta_section .section_wrapper .content .buttons_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.cta_section .section_wrapper .content .buttons_section .primary_btn {
+    padding: 12px 24px;
+    border-radius: 100px;
+    border: 1px solid #272B21;
+    background-color: #272B21;
+    color: #ffffff;
+    height: 48px;
+    width: fit-content;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cta_section .section_wrapper .content .buttons_section .primary_btn:hover {
+    background-color: #BDEE63;
+    color: #272B21;
+    border: 1px solid #BDEE63;
+}
+
+.cta_section .section_wrapper .content .buttons_section .indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.cta_section .section_wrapper .content .buttons_section .indicator .green_dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #bdee63;
 }
