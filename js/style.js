@@ -141,27 +141,4 @@ const steps = document.querySelectorAll('.timeline-step');
     });
 
 
-
-
-
-
-
-
-// KONTAKT
-document.getElementById("contactFrom").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  // Ovdje ide kod za slanje podataka na server (AJAX ili fetch)
-
-  // Prikaži popup
-  const popup = document.getElementById("popupOverlay");
-  popup.style.display = "flex";
-
-  // Sakrij popup nakon 5 sekundi
-  setTimeout(() => {
-    popup.style.display = "none";
-  }, 5000);
-
-  // Očisti formu
-  this.reset();
-});
+    
