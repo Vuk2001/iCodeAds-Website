@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt stranica</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<body>
+
+<!-- NAVIGACIJA -->
+<nav class="navbar">
+
+<div class="wrapper">
+  <div class="logo">
+    <a href="index.html">
+      <img src="media/logo_white.svg" alt="Logo">
+    </a>
+  </div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="#service-section">Usluge</a>
+    <a href="#projects-section">Testimonials</a>
+    <a href="#projects-section">Projekti</a>
+    <a href="#process-section">Proces</a>
+    <button class="primary-btn" onclick="window.location.href='contact_page.html';">Kontaktirajte nas</button>
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+</nav>
+
+
+
+
+<!-- FORMA -->
+<section class="contact-section">
+    <div class="wrapper">
+        <!-- Left Side Info -->
+        <div class="right-side">
+
+            <div class="title-column">
+                <h2>Kontaktirajte nas putem forme</h2>
+                <p>Ispunite formular kako bismo saznali više o projektu.
+                Spremni smo da vam pomognemo u stvaranju uspješnog rješenja.</p>
+            </div>
+
+            <div class="social-container">
+
+                <div class="contact-item">
+                    <div class="top-container">
+                        <img src="/images/contact-page/send-icon.svg" alt="Email icon">
+                        <h3 class="contact-label">Email</h3>
+                    </div>
+                    <p class="contact-value">icodeads@gmail.com</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="top-container">
+                        <img src="/images/contact-page/phone-icon.svg" alt="Phone icon">
+                        <h3 class="contact-label">Telefon</h3>
+                    </div>
+                    <p class="contact-value">+382 111 222 333</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="top-container">
+                        <img src="/images/contact-page/link-icon.svg" alt="Link icon">
+                        <h3 class="contact-label">Društvene mreže</h3>
+                    </div>
+                     <div class="social-media">
+                        <div><img src="images/contact-page/instagram-icon.svg"></div>
+                        <div><img src="images/contact-page/linkedin-icon.svg"></div>
+                        <div><img src="images/contact-page/facebook-icon.svg"></div>
+                     </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right Side Info -->
+        <div class="left-side">
+            <form id="contactFrom">
+                <div class="inputs-row">
+                    <input type="text" id="nameSurename" placeholder="Ime i prezime" autofocus required>
+                    <input type="email" id="email" placeholder="Email" autofocus required>
+                </div>
+
+                <div class="inputs-row">
+                    <input type="text" id="company" placeholder="Kompanija" autofocus>
+                    <input type="text" id="industry" placeholder="Industrija" autofocus>
+                </div>
+
+                <div class="inputs-row">
+                    <textarea id="text-area" name="text-area" cols="100" rows="10" placeholder="Kako vam mozemo pomoci" autofocus></textarea>
+                </div>
+
+                <button class="primary-btn" type="submit" id="submit">
+                    Kontaktirajte nas
+                </button>
+
+            </form>
+
+           <!-- Popup -->
+        <div id="popupOverlay">
+            <div id="popupBox">
+            Vaša poruka je uspješno poslata! <br>
+            Kontaktiraćemo vas u najkraćem mogućem roku.
+            </div>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- FOOTER -->
+<footer>
+
+<div class="footer_wrapper">
+    <div class="right_side">
+        <img href="" src="/media/logo_white.svg">
+        <div class="contact_links">
+            <a href="#">info@icodeads.com</a>
+            <a href="#">+382 111 222 333</a>
+        </div>
+        <div class="social_media">
+            <div><img src="media/instagram_icon.svg"></div>
+            <div><img src="media/linkedin_icon.svg"></div>
+            <div><img src="media/facebook_icon.svg"></div>
+        </div>
+    </div>
+
+    <div class="left_side">
+        <ul class="menu_list">
+            <li><a class="heading" href="#">Meni</a></li>
+            <li><a href="#">Usluge</a></li>
+            <li><a href="#">Proces</a></li>
+            <li><a href="#">Projekti</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+        <ul class="project_list">
+            <li><a class="heading" href="#">Pravni linkovi</a></li>
+            <li><a href="#">Fiena Care Case Study</a></li>
+            <li><a href="#">Sani Pflegedienst Case Study</a></li>
+        </ul>
+    </div>
+
+</div>
+
+    <div class="bottom_links">
+        <a href="#">Sva prava zadržava iCodeAds 2025</a>
+
+    <!-- <div class="privacy_links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of use</a>
+        </div>
+    </div> -->
+
+</footer>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="js/style.js"></script> <!-- Na kraju ide JS kod -->
+
+
+</body>
+</html>
